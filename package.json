@@ -2,7 +2,7 @@
   "name": "hacker-news-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JasonJafari.github.io/hacker-news-react",
+  "homepage": "https://hn.jasonjafari.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
