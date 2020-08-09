@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hacker-news-react/static/css/main.8aa666df.chunk.css",
+    "main.css": "/hacker-news-react/static/css/main.20318a6d.chunk.css",
     "main.js": "/hacker-news-react/static/js/main.ff0e4b00.chunk.js",
     "main.js.map": "/hacker-news-react/static/js/main.ff0e4b00.chunk.js.map",
     "runtime-main.js": "/hacker-news-react/static/js/runtime-main.a616473f.js",
@@ -8,15 +8,15 @@
     "static/js/2.8548da06.chunk.js": "/hacker-news-react/static/js/2.8548da06.chunk.js",
     "static/js/2.8548da06.chunk.js.map": "/hacker-news-react/static/js/2.8548da06.chunk.js.map",
     "index.html": "/hacker-news-react/index.html",
-    "precache-manifest.e744b79615b27ee5841bd9f689725e76.js": "/hacker-news-react/precache-manifest.e744b79615b27ee5841bd9f689725e76.js",
+    "precache-manifest.feadb0a8c78417657d2892c7de01bb02.js": "/hacker-news-react/precache-manifest.feadb0a8c78417657d2892c7de01bb02.js",
     "service-worker.js": "/hacker-news-react/service-worker.js",
-    "static/css/main.8aa666df.chunk.css.map": "/hacker-news-react/static/css/main.8aa666df.chunk.css.map",
+    "static/css/main.20318a6d.chunk.css.map": "/hacker-news-react/static/css/main.20318a6d.chunk.css.map",
     "static/js/2.8548da06.chunk.js.LICENSE.txt": "/hacker-news-react/static/js/2.8548da06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a616473f.js",
     "static/js/2.8548da06.chunk.js",
-    "static/css/main.8aa666df.chunk.css",
+    "static/css/main.20318a6d.chunk.css",
     "static/js/main.ff0e4b00.chunk.js"
   ]
 }
