@@ -11,19 +11,33 @@ const News = () => {
     return ( 
         <section className="news"> 
             { 
-                getNewItems.map(item=>( 
-                    <New  
-                        key={item.id} 
-                        title={item.title} 
-                        author={item.author} 
-                        score={item.score} 
-                        time={item.time} 
-                        link={item.link} 
-                        Summary={item.Summary} 
-                    /> 
-                )) 
+                getNewItems.map(item => { 
+                    let summery = item.Summary 
+                    if (summery == null || summery.length == 0) { 
+                        summery = "there was not any story about this new." 
+                    } 
+                    else { 
+                        summery += '' 
+                    } 
+                    if (summery.length >= 70) { 
+                        summery = summery.substring(0, 70) 
+                    } 
+                    summery += ' ...' 
+                    summery = summery.replace(/<\/?[^>]+(>|$)/g, ""); 
+                    return ( 
+                        <New 
+                            key={item.id} 
+                            title={item.title} 
+                            author={item.author} 
+                            score={item.score} 
+                            time={item.time} 
+                            link={item.link} 
+                            Summary={summery} 
+                        /> 
+                    ) 
+                }) 
             } 
-                          
+ 
         </section> 
  
     ); 
