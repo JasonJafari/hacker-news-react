@@ -9,8 +9,9 @@ const New = (props) => {
             <ul> 
                 <li className="author">Author: {props.author}</li> 
                 <li className="score">Score: {props.score}</li> 
+                <br/> 
                 <li> created at :{props.time}</li> 
-                <li><a href={props.link}>Source</a></li> 
+                <li><a href={props.link} target="_blank">Source</a></li> 
             </ul> 
             <p> 
                 {props.Summary} 
