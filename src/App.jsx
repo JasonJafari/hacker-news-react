@@ -4,6 +4,7 @@ import './App.scss';
 import Header from './components/Header'; 
 import News from './components/News'; 
 import { NewProvider } from './shared/context/new-context'; 
+import Loader from './components/Loader'; 
  
 const App = () => { 
   return ( 
@@ -11,6 +12,7 @@ const App = () => {
       <div className="App"> 
         <Header /> 
         <News /> 
+        <Loader /> 
       </div> 
     </NewProvider> 
   ); 
