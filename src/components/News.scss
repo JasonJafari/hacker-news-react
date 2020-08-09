@@ -1,0 +1,24 @@
+ 
+.news { 
+    position: absolute; 
+    top: 23%; 
+    @media (max-width: 300px) { 
+        top: 18%; 
+        height: 75%; 
+    } 
+    width: 70%; 
+    height: 70%; 
+    border: 2px solid #fff; 
+ 
+    width: 80%; 
+    right: 10%; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.5); 
+    -webkit-box-shadow: 3px -2px 71px 4px rgba(70, 81, 153, 0.45); 
+    -moz-box-shadow: 3px -2px 71px 4px rgba(70, 81, 153, 0.45); 
+    box-shadow: 3px -2px 71px 4px rgba(70, 81, 153, 0.45); 
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column; 
+    overflow: auto; 
+}
