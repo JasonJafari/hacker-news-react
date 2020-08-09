@@ -103,6 +103,15 @@ header {
     p{ 
         text-align: left; 
     } 
+    .author{ 
+        color: blue; 
+        font-style: italic; 
+        font-weight: bold; 
+    } 
+    .score{ 
+        color: red; 
+        font-weight: bold; 
+    } 
 } 
  
 ::-webkit-scrollbar { 
