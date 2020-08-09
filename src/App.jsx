@@ -5,15 +5,18 @@ import Header from './components/Header';
 import News from './components/News'; 
 import { NewProvider } from './shared/context/new-context'; 
 import Loader from './components/Loader'; 
+import { LoaderProvider } from './shared/context/loader-context'; 
  
 const App = () => { 
   return ( 
     <NewProvider > 
-      <div className="App"> 
-        <Header /> 
-        <News /> 
-        <Loader /> 
-      </div> 
+      <LoaderProvider > 
+        <div className="App"> 
+          <Header /> 
+          <News /> 
+          <Loader /> 
+        </div> 
+      </LoaderProvider> 
     </NewProvider> 
   ); 
 } 
