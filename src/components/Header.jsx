@@ -13,7 +13,7 @@ const Header = () => {
  
     useEffect(() => { 
         if (getloader.firstvalue == 0) { 
-            fetch(`http://hn.algolia.com/api/v1/search?tags=front_page`) 
+            fetch(`https://hn.algolia.com/api/v1/search?tags=front_page`) 
                 .then(results => results.json()) 
                 .then(data => { 
                     const NewNews = [] 
@@ -53,7 +53,7 @@ const Header = () => {
         } else { 
             setloader({ value: 1, firstvalue: 1 }) 
             timer = setTimeout(() => { 
-                fetch(`http://hn.algolia.com/api/v1/search?query=${searchVlue}&tags=story&hitsPerPage=50`) 
+                fetch(`https://hn.algolia.com/api/v1/search?query=${searchVlue}&tags=story&hitsPerPage=50`) 
                     .then(results => results.json()) 
                     .then(data => { 
                         const NewNews = [] 
