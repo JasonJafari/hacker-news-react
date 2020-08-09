@@ -9,7 +9,7 @@ const Header = () => {
  
     const handleSearch = (ev) => { 
         clearTimeout(timer); 
-        let searchVlue = ev.target.value; 
+        const searchVlue = ev.target.value; 
         if (searchVlue.length <= 2) { 
             setNewItems([{ id: 1, title: "You Shoud Add at least 3 Charachter for Showing data" }]) 
         } else { 
@@ -17,14 +17,14 @@ const Header = () => {
                 fetch(`http://hn.algolia.com/api/v1/search?query=${searchVlue}&tags=story&hitsPerPage=50`) 
                     .then(results => results.json()) 
                     .then(data => { 
-                        let NewNews = [] 
+                        const NewNews = [] 
                         data.hits.map(item => { 
-                            let NewNew = { 
+                            const NewNew = { 
                                 id: item.objectID, 
                                 title: item.title, 
                                 author: item.author, 
                                 score: item.points, 
-                                time: item.created_at_i, 
+                                time: item.created_at, 
                                 link: item.url, 
                                 Summary: item.story_text 
                             } 
