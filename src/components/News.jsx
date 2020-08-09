@@ -9,7 +9,7 @@ const News = () => {
     const [getNewItems, setNewItems] = useContext(NewContext); 
  
     return ( 
-        <section class="news"> 
+        <section className="news"> 
             { 
                 getNewItems.map(item=>( 
                     <New  
